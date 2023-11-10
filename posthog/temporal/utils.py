@@ -22,7 +22,7 @@ class NotEnoughHeartbeatValuesError(Exception):
 
 
 class HeartbeatParseError(Exception):
-    """Raised when an activity heartbeat cannot be parsed into it's expected types."""
+    """Raised when an activity heartbeat cannot be parsed into its expected types."""
 
     def __init__(self, field: str):
         super().__init__(f"Parsing {field} from heartbeat details encountered an error")
